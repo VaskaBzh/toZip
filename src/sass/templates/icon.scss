@@ -1,0 +1,27 @@
+.icon {
+  width: 16px;
+  height: 16px;
+  &_wrapper {
+    border-radius: $radius;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: $blue;
+  }
+  &-white {
+    use,
+    path {
+      fill: $white !important;
+    }
+    fill: $white !important;
+  }
+  &-blue {
+    use,
+    path {
+      fill: $blue !important;
+    }
+    fill: $blue !important;
+  }
+}

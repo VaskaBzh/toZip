@@ -1,0 +1,18 @@
+.header {
+  max-width: 30vw;
+  background: $gray;
+  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  &__section {
+    height: 100%;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 86px;
+  }
+  @include lg {
+    max-width: 450px;
+  }
+}

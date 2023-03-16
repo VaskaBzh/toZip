@@ -1,0 +1,16 @@
+.title {
+  color: $gray;
+  font-weight: 600;
+  &-h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  &-h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 24px;
+  }
+  &-white {
+    color: #ffffff;
+  }
+}

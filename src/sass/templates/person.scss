@@ -1,0 +1,14 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &_img {
+    max-width: 160px;
+  }
+  &_job {
+    color: $lightGray;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}

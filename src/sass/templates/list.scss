@@ -1,0 +1,34 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  &-white {
+    .list {
+      &_title,
+      &_row {
+        color: $white;
+      }
+    }
+  }
+  &-with_markers {}
+  &-with_icons {
+    .list {
+      &_row {
+        width: fit-content;
+        padding: 3px 9px 3px 3px;
+        border: $border;
+        border-radius: 25px;
+      }
+    }
+  }
+  &_title {
+    margin-bottom: 8px;
+  }
+  &_row {
+    font-weight: 400;
+    line-height: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
