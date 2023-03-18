@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  &-black {
+    .person_name {
+      max-width: 200px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
   &_img {
     max-width: 160px;
   }

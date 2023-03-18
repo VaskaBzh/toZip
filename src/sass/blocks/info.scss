@@ -3,4 +3,32 @@
   flex-direction: column;
   gap: 20px;
   padding: 70px;
+  height: 1920px;
+  .line {
+    min-height: 1px;
+  }
+  &_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 52px 80px;
+    .person {
+      width: calc(50% - 80px);
+    }
+
+    &:first-child {
+      min-height: 1100px;
+    }
+    &:last-child {
+      margin-top: 63px;
+    }
+  }
+  .list_row {
+    line-height: 17px;
+  }
+  &-buttons {
+    .list_time {
+      min-width: 120px;
+      padding: 4px 8px;
+    }
+  }
 }

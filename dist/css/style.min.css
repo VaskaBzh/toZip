@@ -24,6 +24,12 @@
   flex-direction: column;
   gap: 10px;
 }
+.person-black .person_name {
+  max-width: 200px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
 .person_img {
   max-width: 160px;
 }
@@ -90,8 +96,61 @@
   flex-direction: column;
   gap: 12px;
 }
+.list-white .list_title {
+  margin-bottom: 12px;
+}
 .list-white .list_title, .list-white .list_row {
   color: #fff;
+}
+.list-func .list_row {
+  line-height: 17px !important;
+}
+.list-add {
+  gap: 20px;
+}
+.list-add .mt-4 {
+  margin-top: -4px;
+}
+.list-add .list_row {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.list-add .list_row span {
+  color: #B3B3BF;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+.list_time {
+  min-width: 84px;
+  width: fit-content;
+  padding: 4px 9px;
+  min-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #2A282D;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  gap: 12px;
+}
+.list-lineH .list_row {
+  line-height: 20px !important;
+}
+.list-with_markers .list_row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.list-with_markers .list_row:before {
+  content: url("../../img/mark.svg");
+  width: 14px;
+  height: 14px;
 }
 .list-with_icons .list_row {
   width: fit-content;
@@ -99,8 +158,89 @@
   border: 0.386054px solid #B3B3BF;
   border-radius: 25px;
 }
+.list_col {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.list_subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.list_wrap {
+  display: flex;
+  gap: 20px;
+}
+.list_wrap .list_col {
+  gap: 20px;
+  max-width: calc(100% - 450px - 20px);
+}
+.list_wrap-100 .list_col {
+  max-width: 100%;
+}
+.list_wrap-gap {
+  gap: 150px;
+}
+.list_wrap-gap .list_col {
+  max-width: 270px;
+}
+.list_wrap-gap .list_col:last-child {
+  max-width: 349px;
+}
+.list_wrap-gap .list_col:last-child .list_tabs_wrap {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.list-small {
+  max-width: 450px;
+  width: 100%;
+}
+.list_tabs {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.list_tabs_wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.list_tabs_wrap-270 {
+  max-width: 270px;
+}
+.list_tabs_wrap .title {
+  width: 100%;
+  font-weight: 600;
+  font-size: 13.1224px;
+  line-height: 16px;
+}
+.list_tab {
+  padding: 5px 10px;
+  border: 0.386054px solid #B3B3BF;
+  border-radius: 41px;
+  font-weight: 400;
+  font-size: 10.9354px;
+  line-height: 13px;
+  height: 24px;
+  width: fit-content;
+}
 .list_title {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+.list_info {
+  display: inline-flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.list_info .title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.list_el {
+  line-height: 17px;
+  color: #2A282D;
 }
 .list_row {
   font-weight: 400;
@@ -108,6 +248,19 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+.list_row-time {
+  gap: 12px;
+  align-items: flex-start;
+}
+.list_row-time .title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.list_row-time span {
+  line-height: 17px;
+  color: #7D7A89;
 }
 
 .wrapper,
@@ -120,10 +273,14 @@
 .header {
   max-width: 30vw;
   background: #2A282D;
-  height: 100%;
   display: flex;
   min-height: 100vh;
+  width: 100%;
+  height: 1920px;
   flex-direction: column;
+}
+.header_wrap:first-child {
+  min-height: 1120px;
 }
 .header__section {
   height: 100%;
@@ -137,12 +294,40 @@
     max-width: 450px;
   }
 }
+.header .list_row {
+  line-height: 14px;
+}
 
 .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 70px;
+  height: 1920px;
+}
+.info .line {
+  min-height: 1px;
+}
+.info_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px 80px;
+}
+.info_wrap .person {
+  width: calc(50% - 80px);
+}
+.info_wrap:first-child {
+  min-height: 1100px;
+}
+.info_wrap:last-child {
+  margin-top: 63px;
+}
+.info .list_row {
+  line-height: 17px;
+}
+.info-buttons .list_time {
+  min-width: 120px;
+  padding: 4px 8px;
 }
 
 * {
